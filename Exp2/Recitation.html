@@ -188,6 +188,7 @@
 
 </body>
 </html>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -267,36 +268,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- 6 & 11. Navbar -->
+    <!-- Navbar -->
     <nav id="navbar">
-        <a href="#welcome-section">Welcome</a>
-        <a href="#project-section">Projects</a>
-        <a id="profile-link" href="https://github.com/yourusername" target="_blank">
-            GitHub
-        </a>
+        <ul>
+            <li><a href="#welcome-section">Home</a></li>
+            <li><a href="#project-section">Projects</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
     </nav>
 
-    <!-- 1 & 2 & 10. Welcome section -->
+    <!-- Welcome Section -->
     <section id="welcome-section">
         <h1>Welcome to My Portfolio</h1>
     </section>
 
-    <!-- 3. Projects section -->
+    <!-- Projects Section -->
     <section id="project-section">
         <h2>My Projects</h2>
-
-        <!-- 4. Project tile -->
         <div class="project-tile">
-            <h3>Sample Project</h3>
-            <!-- 5. Link to a project -->
-            <a href="https://example.com" target="_blank">View Project</a>
+            <a href="https://github.com/RaulDmonty1/AIML_MLLAB_18" target="_blank">Project 1</a>
+        </div>
+        <div class="project-tile">
+            <a href="https://github.com/RaulDmonty1/AIML_WPDLAB_18" target="_blank">Project 2</a>
         </div>
     </section>
 
+    <!-- Profile Link -->
+    <a id="profile-link" href="https://github.com/raulDmonty1" target="_blank">My GitHub Profile</a>
+
+    <!-- Contact Section -->
+<section id="contact-section">
+    <h2>Contact Me</h2>
+    <form id="contact-form" action="submit_form.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea><br><br>
+
+        <input type="submit" value="Send Message">
+    </form>
+</section>
 </body>
 </html>
+
