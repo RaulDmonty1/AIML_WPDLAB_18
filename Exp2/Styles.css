@@ -1,0 +1,341 @@
+/* Basic styles for the todo-list */
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-list li {
+    margin: 10px 0;
+}
+
+.todo-list input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.sub-item {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.sub-item-link {
+    text-decoration: none; /* Remove text decoration */
+    color: #007bff; /* Unvisited link color */
+}
+
+/* Link styles on hover, click, and visited states */
+.sub-item-link:hover {
+    color: #0056b3; /* Change color on hover */
+}
+
+.sub-item-link:active {
+    color: #003366; /* Change color on click */
+}
+
+.sub-item-link:visited {
+    color: #6f42c1; /* Color after visiting the link */
+}
+
+/* Focus outline for accessibility */
+.sub-item-link:focus {
+    outline: 2px solid #ffcc00; /* Outline when focused */
+}
+
+/* Unvisited link color */
+.sub-item-link {
+    color: #007bff; /* Set color for unvisited links */
+}
+
+/* Container styling */
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Basic form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Focus effect on input and textarea */
+input:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Invalid input styles */
+input:invalid, select:invalid, textarea:invalid {
+    border-color: red;
+}
+
+/* Valid input styles */
+input:valid, select:valid, textarea:valid {
+    border-color: green;
+}
+
+/* Hover effect on submit button */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Radio button styling when checked */
+.radio-group input[type="radio"]:checked {
+    border-color: #007bff;
+    background-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.radio-group input[type="radio"]:checked + label {
+    color: #007bff;
+}
+
+/* Style for the first input field */
+input[type="text"]:first-of-type {
+    border-radius: 15px 5px 5px 15px; /* Rounded corners for the first input field */
+}
+
+/* 1. Body background color */
+body {
+    background-color: #f4f4f4;
+    padding: 40px;
+}
+
+/* 2. Color grid container */
+.color-grid {
+    display: flex;
+    gap: 15px;
+}
+
+/* 5. Color box size */
+.color-box {
+    width: 100px;
+    height: 100px;
+}
+
+/* 6. Hexadecimal color */
+.color1 {
+    background-color: #ff5733;
+}
+
+/* 7. RGB color */
+.color2 {
+    background-color: rgb(52, 152, 219);
+}
+
+/* 8. Predefined color name */
+.color3 {
+    background-color: green;
+}
+
+/* 9. HSL color */
+.color4 {
+    background-color: hsl(280, 60%, 60%);
+}
+
+/* 10. Any background color */
+.color5 {
+    background-color: orange;
+}
+
+/* Page styling */
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+/* Feature card container */
+.feature-card-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Feature card styling */
+.feature-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* 5. Checkbox base styling */
+.feature-card input[type="checkbox"] {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #555;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* 6, 7 & 8. Checked state */
+.feature-card input[type="checkbox"]:checked {
+    background-color: #4caf50;
+    border-color: #2e7d32;
+}
+
+/* Checkmark */
+.feature-card input[type="checkbox"]:checked::after {
+    content: "✓";
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+\/* 2 & 3. Email container styling */
+#email {
+    padding: 50px;
+    margin-top: 50px;
+    width: 500px;
+    border: 2px solid #000;
+    box-sizing: border-box; /* ensures total width is 500px */
+    font-family: Arial, sans-serif;
+}
+
+/* 5 & 6. Confidential labels */
+#confidential,
+#top-secret {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: 2px solid red;
+    font-weight: bold;
+}
+
+/* 7 & 9. Confidential text + rotation */
+#confidential {
+    transform: rotate(-10deg);
+}
+
+/* 8 & 9. Top secret text + rotation */
+#top-secret {
+    transform: rotate(10deg);
+}
+
+/* 12. Blurred text */
+.blurred {
+    filter: blur(3px);
+}
+
+/* 2. Pricing container flex setup */
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* 10. Pricing card base styles */
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 200px;
+    border: 2px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* 11. Basic plan order */
+.basic-plan {
+    order: 1;
+}
+
+/* 12. Pro plan order and growth */
+.pro-plan {
+    order: 2;
+    flex-grow: 2;
+}
+
+/* 13. Premium plan order */
+.premium-plan {
+    order: 3;
+}
+
+/* Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 11. Fixed navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    z-index: 1000;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 1 & 10. Welcome section */
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    margin-top: 50px; /* prevents overlap with navbar */
+}
+
+/* 3. Projects section */
+#project-section {
+    padding: 50px;
+}
+
+/* 4. Project tile */
+.project-tile {
+    border: 2px solid #000;
+    padding: 20px;
+    max-width: 300px;
+}
+
+/* 9. Media query */
+@media (max-width: 600px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-tile {
+        width: 100%;
+    }
+}
