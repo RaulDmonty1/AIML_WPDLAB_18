@@ -306,36 +306,169 @@ body {
     text-decoration: none;
 }
 
-/* 1 & 10. Welcome section */
-#welcome-section {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f4f4f4;
-    margin-top: 50px; /* prevents overlap with navbar */
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* 3. Projects section */
-#project-section {
-    padding: 50px;
-}
-
-/* 4. Project tile */
-.project-tile {
-    border: 2px solid #000;
+/* Body and basic layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
     padding: 20px;
-    max-width: 300px;
 }
 
-/* 9. Media query */
-@media (max-width: 600px) {
-    #navbar {
+/* Navbar Styling */
+#navbar {
+    background-color: #3498db;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 10px 0;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#navbar ul li {
+    margin: 0 20px;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Welcome Section */
+#welcome-section {
+    text-align: center;
+    margin-top: 80px; /* Adjust to prevent overlap with navbar */
+}
+
+#welcome-section h1 {
+    color: #2c3e50;
+    font-size: 36px;
+}
+
+/* Projects Section */
+#project-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#project-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.project-tile {
+    background-color: #ecf0f1;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.project-tile a {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 20px;
+}
+
+.project-tile a:hover {
+    text-decoration: underline;
+}
+
+/* Profile Link Styling */
+#profile-link {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    color: #3498db;
+    text-decoration: none;
+}
+
+#profile-link:hover {
+    text-decoration: underline;
+}
+
+/* Media Query for mobile responsiveness */
+@media (max-width: 768px) {
+    #navbar ul {
         flex-direction: column;
-        align-items: center;
     }
 
     .project-tile {
+        display: block;
         width: 100%;
     }
+}
+/* Contact Section */
+#contact-section {
+    background-color: #fff;
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #34495e;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2980b9;
 }
