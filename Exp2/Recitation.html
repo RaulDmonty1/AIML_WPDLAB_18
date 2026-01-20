@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Card</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: greenyellow; font-family: Arial, sans-serif; text-align: center;">
+
+  <div class="business-card">
+    <img class="profile-image" src="https://i.ibb.co/20ZsXzpY/mine.webp" alt="Profile Image">
+    <p class="full-name">Rishon</p>
+    <p class="designation">Web Developer</p>
+    <p class="company">ABC Corp.</p>
+    <hr>
+    <p>Rishon@cmail.com</p>
+    <p>(123) 456-7890</p>
+    <a class="portfolio-link" href="https://www.rishonportfolio.com" target="_blank">Portfolio</a>
+    <hr>
+    <div class="social-media">
+      <h2>Connect with me</h2>
+      <a href="https://twitter.com/rishon" target="_blank">Twitter</a>
+      <a href="https://www.linkedin.com/in/rishon/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/rishon" target="_blank">GitHub</a>
+    </div>
+  </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <ul class="todo-list">
+        <!-- List Item 1 -->
+        <li>
+            <input type="checkbox" id="task-1">
+            <label for="task-1">Buy groceries</label>
+            <ul class="sub-item">
+                <li><a href="https://www.example.com" class="sub-item-link" target="_blank">Link to recipe</a></li>
+            </ul>
+        </li>
+
+        <!-- List Item 2 -->
+        <li>
+            <input type="checkbox" id="task-2">
+            <label for="task-2">Clean the house</label>
+            <ul class="sub-item">
+                <li><a href="https://www.example.com" class="sub-item-link" target="_blank">Cleaning tips</a></li>
+            </ul>
+        </li>
+
+        <!-- List Item 3 -->
+        <li>
+            <input type="checkbox" id="task-3">
+            <label for="task-3">Finish homework</label>
+            <ul class="sub-item">
+                <li><a href="https://www.example.com" class="sub-item-link" target="_blank">Study guide</a></li>
+            </ul>
+        </li>
+
+        <!-- List Item 4 -->
+        <li>
+            <input type="checkbox" id="task-4">
+            <label for="task-4">Exercise</label>
+            <ul class="sub-item">
+                <li><a href="https://www.example.com" class="sub-item-link" target="_blank">Workout routine</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="POST">
+            <!-- Full Name -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <!-- Email Address -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <!-- Job Position -->
+            <label for="position">Job Position:</label>
+            <select id="position" name="position" required>
+                <option value="" disabled selected>Select a position</option>
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+                <option value="manager">Manager</option>
+            </select>
+            
+            <!-- Availability Options -->
+            <fieldset class="radio-group">
+                <legend>Availability:</legend>
+                <label for="full-time">
+                    <input type="radio" id="full-time" name="availability" value="full-time">
+                    Full-Time
+                </label>
+                <label for="part-time">
+                    <input type="radio" id="part-time" name="availability" value="part-time">
+                    Part-Time
+                </label>
+                <label for="freelance">
+                    <input type="radio" id="freelance" name="availability" value="freelance">
+                    Freelance
+                </label>
+            </fieldset>
+            
+            <!-- Message -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Grid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="color-grid">
+        <div class="color-box color1"></div>
+        <div class="color-box color2"></div>
+        <div class="color-box color3"></div>
+        <div class="color-box color4"></div>
+        <div class="color-box color5"></div>
+    </div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feature Selection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 1. H1 heading -->
+    <h1>Feature Selection</h1>
+
+    <!-- 2. Feature card container -->
+    <div class="feature-card-container">
+
+        <!-- 3 & 4. Feature cards with checkbox and label text -->
+        <label class="feature-card">
+            <input type="checkbox">
+            Enable Notifications
+        </label>
+
+        <label class="feature-card">
+            <input type="checkbox">
+            Dark Mode
+        </label>
+
+        <label class="feature-card">
+            <input type="checkbox">
+            Auto Updates
+        </label>
+
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Confidential</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 1. Main element with id email -->
+    <main id="email">
+
+        <!-- 4. Confidential labels -->
+        <div id="confidential">CONFIDENTIAL</div>
+        <div id="top-secret">TOP SECRET</div>
+
+        <!-- 10. Paragraphs with blurred spans -->
+        <p>
+            This email contains <span class="blurred">sensitive information</span> that
+            should not be shared publicly.
+        </p>
+
+        <p>
+            The project code name is <span class="blurred">Eagle Night</span> and all
+            documentation must remain <span class="blurred">restricted</span>.
+        </p>
+
+        <p>
+            Please contact <span class="blurred">authorized personnel only</span> for
+            further details.
+        </p>
+
+    </main>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pricing Plans</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 1. Page heading -->
+    <h1>Pricing Plans</h1>
+
+    <!-- 2. Pricing container -->
+    <div class="pricing-container">
+
+        <!-- 3 & 4 & 5. Basic plan -->
+        <div class="pricing-card basic-plan">
+            <h2>Basic</h2>
+            <p>$9/month</p>
+        </div>
+
+        <!-- 3 & 6 & 7. Pro plan -->
+        <div class="pricing-card pro-plan">
+            <h2>Pro</h2>
+            <p>$19/month</p>
+        </div>
+
+        <!-- 3 & 8 & 9. Premium plan -->
+        <div class="pricing-card premium-plan">
+            <h2>Premium</h2>
+            <p>$29/month</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 6 & 11. Navbar -->
+    <nav id="navbar">
+        <a href="#welcome-section">Welcome</a>
+        <a href="#project-section">Projects</a>
+        <a id="profile-link" href="https://github.com/yourusername" target="_blank">
+            GitHub
+        </a>
+    </nav>
+
+    <!-- 1 & 2 & 10. Welcome section -->
+    <section id="welcome-section">
+        <h1>Welcome to My Portfolio</h1>
+    </section>
+
+    <!-- 3. Projects section -->
+    <section id="project-section">
+        <h2>My Projects</h2>
+
+        <!-- 4. Project tile -->
+        <div class="project-tile">
+            <h3>Sample Project</h3>
+            <!-- 5. Link to a project -->
+            <a href="https://example.com" target="_blank">View Project</a>
+        </div>
+    </section>
+
+</body>
+</html>
