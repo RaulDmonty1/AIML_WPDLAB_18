@@ -81,3 +81,522 @@
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playing Cards</title>
+  <style>
+    /* Container for all cards */
+    #playing-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 20px;
+    }
+
+    /* Each individual card */
+    .card {
+      display: flex;
+      justify-content: space-between;
+      width: 150px;  /* example width */
+      height: 200px; /* example height */
+      border: 2px solid black;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    /* Left section of card */
+    .left {
+      align-self: flex-start;
+    }
+
+    /* Middle section of card */
+    .middle {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+    }
+
+    /* Right section of card */
+    .right {
+      align-self: flex-end;
+    }
+
+    /* Optional styling for content inside sections */
+    .left, .middle, .right {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <main id="playing-cards">
+    <div class="card">
+      <div class="left">A</div>
+      <div class="middle">
+        <div>♠</div>
+        <div>♠</div>
+        <div>♠</div>
+      </div>
+      <div class="right">A</div>
+    </div>
+
+    <div class="card">
+      <div class="left">K</div>
+      <div class="middle">
+        <div>♥</div>
+        <div>♥</div>
+        <div>♥</div>
+      </div>
+      <div class="right">K</div>
+    </div>
+
+    <div class="card">
+      <div class="left">Q</div>
+      <div class="middle">
+        <div>♦</div>
+        <div>♦</div>
+        <div>♦</div>
+      </div>
+      <div class="right">Q</div>
+    </div>
+  </main>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation</title>
+  <style>
+    /* General styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+
+    /* Navbar styles */
+    #navbar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 250px;
+      background-color: #f4f4f4;
+      border-right: 2px solid #ccc;
+      padding: 20px;
+      box-sizing: border-box;
+      overflow-y: auto;
+    }
+
+    #navbar header {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    #navbar a.nav-link {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: #333;
+    }
+
+    #navbar a.nav-link:hover {
+      color: #007acc;
+    }
+
+    /* Main content */
+    #main-doc {
+      margin-left: 270px; /* leave space for navbar */
+      padding: 20px;
+      max-width: 800px;
+    }
+
+    .main-section {
+      margin-bottom: 40px;
+    }
+
+    .main-section header {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .main-section p {
+      margin-bottom: 10px;
+    }
+
+    code {
+      background-color: #eee;
+      padding: 2px 4px;
+      font-family: monospace;
+      border-radius: 4px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    /* Media query for small screens */
+    @media (max-width: 768px) {
+      #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+      }
+
+      #main-doc {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <header>Technical Docs</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Getting_Started">Getting Started</a>
+    <a class="nav-link" href="#Installation">Installation</a>
+    <a class="nav-link" href="#Usage">Usage</a>
+    <a class="nav-link" href="#API_Reference">API Reference</a>
+  </nav>
+
+  <!-- Main content -->
+  <main id="main-doc">
+
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>This project demonstrates a Technical Documentation page layout.</p>
+      <p>It includes a fixed navbar and multiple sections.</p>
+      <code>console.log('Hello World');</code>
+      <ul>
+        <li>Overview</li>
+        <li>Purpose</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Getting_Started">
+      <header>Getting Started</header>
+      <p>First, clone the repository to your local machine.</p>
+      <p>Next, open the project in your preferred editor.</p>
+      <code>git clone https://github.com/user/repo.git</code>
+      <ul>
+        <li>Setup environment</li>
+        <li>Install dependencies</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Installation">
+      <header>Installation</header>
+      <p>Run the following command to install the necessary packages:</p>
+      <code>npm install</code>
+      <p>Verify installation with:</p>
+      <code>npm start</code>
+      <ul>
+        <li>Check version</li>
+        <li>Confirm dependencies</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Usage">
+      <header>Usage</header>
+      <p>After installation, you can start using the application.</p>
+      <p>Example usage in code:</p>
+      <code>app.init();</code>
+      <ul>
+        <li>Start server</li>
+        <li>Open browser</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="API_Reference">
+      <header>API Reference</header>
+      <p>All functions are documented below.</p>
+      <p>Use <code>api.fetchData()</code> to retrieve data.</p>
+      <p>Use <code>api.sendData()</code> to send data.</p>
+      <ul>
+        <li>fetchData()</li>
+        <li>sendData()</li>
+      </ul>
+    </section>
+
+  </main>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newspaper Layout</title>
+  <style>
+    /* Newspaper layout grid */
+    .newspaper-layout {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto 1fr 1fr 1fr;
+      grid-template-areas:
+        "title title title"
+        "feature-article feature-article cover-image"
+        "secondary-article secondary-article cover-image"
+        "small-article1 small-article2 small-article3";
+      gap: 20px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Grid area assignments */
+    .title {
+      grid-area: title;
+    }
+
+    .feature-article {
+      grid-area: feature-article;
+    }
+
+    .cover-image {
+      grid-area: cover-image;
+    }
+
+    .secondary-article {
+      grid-area: secondary-article;
+    }
+
+    .small-article1 {
+      grid-area: small-article1;
+    }
+
+    .small-article2 {
+      grid-area: small-article2;
+    }
+
+    .small-article3 {
+      grid-area: small-article3;
+    }
+
+    /* Header and images */
+    .title h1 {
+      margin: 0;
+    }
+
+    .cover-image img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* Optional styling for articles */
+    article h2, article h3 {
+      margin: 0 0 10px 0;
+    }
+
+    article p {
+      margin: 0 0 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="newspaper-layout">
+
+    <!-- Title -->
+    <header class="title">
+      <h1>Daily Grid Times</h1>
+    </header>
+
+    <!-- Feature article -->
+    <article class="feature-article">
+      <h2>Breaking News: Market Update</h2>
+      <p>The stock market saw significant gains today, with tech stocks leading the rally...</p>
+    </article>
+
+    <!-- Cover image -->
+    <figure class="cover-image">
+      <img src="https://via.placeholder.com/300x200" alt="Cover Image">
+    </figure>
+
+    <!-- Secondary article -->
+    <article class="secondary-article">
+      <h2>Sports Highlights</h2>
+      <p>Local teams showcased incredible performances, leaving fans thrilled...</p>
+    </article>
+
+    <!-- Small articles -->
+    <article class="small-article1">
+      <h3>Weather Update</h3>
+      <p>Sunny skies expected throughout the week with mild temperatures.</p>
+    </article>
+
+    <article class="small-article2">
+      <h3>Tech Tips</h3>
+      <p>Discover 5 productivity apps to improve your workflow.</p>
+    </article>
+
+    <article class="small-article3">
+      <h3>Health News</h3>
+      <p>Experts recommend daily walks for improved mental health.</p>
+    </article>
+
+  </main>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+  <style>
+    /* General reset and styling */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header */
+    #header {
+      display: flex; /* Flexbox used here */
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      position: sticky; /* navbar always at top */
+      top: 0;
+      z-index: 1000;
+    }
+
+    #header-img {
+      height: 50px;
+      width: auto;
+    }
+
+    /* Navbar links */
+    #nav-bar {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Video section */
+    #video-section {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0;
+    }
+
+    #video {
+      width: 80%;
+      max-width: 800px;
+      height: 450px;
+    }
+
+    /* Form section */
+    #form-section {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0;
+    }
+
+    #form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 300px;
+    }
+
+    #email, #submit {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    #submit {
+      background-color: #007acc;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    #submit:hover {
+      background-color: #005a99;
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 600px) {
+      #header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      #nav-bar {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      #video {
+        width: 100%;
+        height: auto;
+      }
+
+      #form {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="header">
+    <img id="header-img" src="https://via.placeholder.com/150x50" alt="Company Logo">
+    <nav id="nav-bar">
+      <a class="nav-link" href="#video-section">Video</a>
+      <a class="nav-link" href="#form-section">Subscribe</a>
+      <a class="nav-link" href="#footer">Footer</a>
+    </nav>
+  </header>
+
+  <!-- Video Section -->
+  <section id="video-section">
+    <iframe id="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Product Video" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <!-- Subscription Form -->
+  <section id="form-section">
+    <form id="form" action="https://www.freecodecamp.org/email-submit">
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <input type="submit" id="submit" value="Subscribe">
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" style="text-align:center; padding:20px; background-color:#f4f4f4;">
+    &copy; 2026 Company Name. All rights reserved.
+  </footer>
+
+</body>
+</html>
